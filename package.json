@@ -1,15 +1,20 @@
 {
-  "author": "@valango",
   "description": "monorepo example of 250130",
   "name": "monorepo",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "source": "open https://medium.com/@julakadaredrishi/monorepos-a-comprehensive-guide-with-examples-63202cfab711"
+    "source": "open https://medium.com/@julakadaredrishi/monorepos-a-comprehensive-guide-with-examples-63202cfab711",
+    "start:web": "yarn workspace @monorepo/web-app start",
+    "start:api": "yarn workspace @monorepo/api-server node src/index.js",
+    "dev": "concurrently \"yarn start:web\" \"yarn start:api\""
   },
   "version": "0.0.1",
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
 }
