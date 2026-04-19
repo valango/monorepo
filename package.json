@@ -1,0 +1,10 @@
+{
+  "name": "monorepo",
+  "version": "0.0.1",
+  "description": "monorepo example of 250130",
+  "main": "index.js",
+  "author": "@valango",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"]
+}
