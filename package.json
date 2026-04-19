@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "clean": "rm -fr node_modules apps/*/node_modules packages/*/node_modules",
     "source": "open https://medium.com/@julakadaredrishi/monorepos-a-comprehensive-guide-with-examples-63202cfab711",
     "start:web": "yarn workspace @monorepo/web-app start",
     "start:api": "yarn workspace @monorepo/api-server node src/index.js",
